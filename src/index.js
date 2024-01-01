@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import './css/index.css';
 
 import Header from './components/Header';
+import Projects from './components/Project';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +17,7 @@ header.render(
 root.render(
   <React.StrictMode>
   <App />
+  <Projects />
   </React.StrictMode>
 );
 
