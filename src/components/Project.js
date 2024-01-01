@@ -56,7 +56,7 @@ const Projects = () => {
                 <div className="providers">
                     <div className="projects">
 
-                    { projects.map(function(project) {
+                    { projects.map(project => {
 
                         return (
                             <div className="project" key={project.id}>
