@@ -32,8 +32,8 @@ function App() {
     
     <div className="packages">
 
-      {images.map((image) => (
-        <div className="tool">
+      {images.map((image, index) => (
+        <div className="tool" key={index + 1}>
           <img src={ `./images/${image}.svg` } alt="#" /> <span>{ image.toUpperCase() }</span>
 
         </div>
