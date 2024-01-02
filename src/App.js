@@ -1,10 +1,17 @@
+import PackagesList from "./templates/PackageImages";
+import { useState } from "react";
+
 function App() {
 
-  const images = [
-    'bootstrap', 'html', 'php', 'tailwind', 'mongo',
-     'git', 'mysql', 'heroku', 'netlify', 'css',
-      'js', 'node', 'github', 'laravel', 'react', 'postman'
-  ];
+  const [images, setImage] = useState(
+    [
+      'bootstrap', 'html', 'php', 'tailwind', 'mongo',
+       'git', 'mysql', 'heroku', 'netlify', 'css',
+        'js', 'node', 'github', 'laravel', 'react', 'postman'
+    ]
+  );
+
+
   const description = (
     <p>
       I am a Software Engineer with a foundational understanding of
@@ -31,14 +38,7 @@ function App() {
     </p>
     
     <div className="packages">
-
-      {images.map((image, index) => (
-        <div className="tool" key={index + 1}>
-          <img src={ `./images/${image}.svg` } alt="#" /> <span>{ image.toUpperCase() }</span>
-
-        </div>
-        ))}
-
+      <PackagesList images={images} />
     </div>
 
   </div>
