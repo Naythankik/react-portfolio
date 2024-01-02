@@ -6,6 +6,7 @@ import './css/index.css';
 import Header from './components/Header';
 import Projects from './components/Project';
 import Services from './components/Services';
+import Contacts from './components/Contacts'
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,7 @@ root.render(
   <App />
   <Projects />
   <Services />
+  <Contacts />
   </React.StrictMode>
 );
 
